@@ -1,0 +1,137 @@
+
+<!--Create a multi-section student profile webpage containing personal
+details, education, skills, hobbies, achievements, and contact
+information. Add internal links at the top to navigate to different
+sections of the same webpage.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile | Soumyabrata Misra</title>
+<style>
+:root{--navy:#12345a;--blue:#2878b8;--pale:#eef6ff;--ink:#243447;--muted:#607286}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f2f6fb;color:var(--ink);line-height:1.65}
+.hero{background:linear-gradient(125deg,#102d50,#2878b8);color:#fff;text-align:center;padding:42px 18px 35px}
+.avatar{width:112px;height:112px;object-fit:cover;border-radius:50%;margin:0 auto 12px;display:block;background:#fff;color:var(--navy);border:4px solid #b9dcfa;font-size:34px;font-weight:700;letter-spacing:2px}
+.hero h1{margin:5px 0;font-size:clamp(26px,4vw,36px)}
+.hero p{margin:2px 0;color:#e4f2ff}
+nav{position:sticky;top:0;z-index:5;background:#0b2545;padding:12px 10px;display:flex;justify-content:center;flex-wrap:wrap;gap:7px;box-shadow:0 3px 10px #102d5030}
+nav a{color:#fff;text-decoration:none;font-size:14px;font-weight:700;padding:7px 10px;border-radius:7px}
+nav a:hover,nav a:focus{background:#2878b8;color:#fff;outline:none}
+main{max-width:960px;margin:26px auto;padding:0 16px}
+section{background:#fff;border:1px solid #e3ebf3;border-radius:13px;padding:24px;margin:0 0 20px;box-shadow:0 5px 18px #1738580b;scroll-margin-top:86px}
+h2{font-size:21px;color:var(--navy);margin:0 0 16px;padding-bottom:8px;border-bottom:2px solid #c9e3fb}
+h3{margin:10px 0 4px;color:#1c5688;font-size:17px}
+p{margin:7px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.detail{background:var(--pale);border-radius:8px;padding:10px 12px}
+ul,ol{padding-left:23px;margin:8px 0}
+li{padding:2px 0}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{background:#e7f3ff;color:#164c7a;border:1px solid #cde5fb;border-radius:30px;padding:6px 13px;font-size:14px;font-weight:700}
+.note{color:var(--muted);font-size:14px}
+.contact-line{padding:8px 0;border-bottom:1px solid #edf1f5}
+footer{text-align:center;background:#0b2545;color:#eaf4ff;padding:20px 12px;font-size:14px}
+.top{text-align:right;margin-top:8px;font-size:13px}
+.top a{color:#2878b8;text-decoration:none}
+@media(max-width:600px){section{padding:18px}.grid{grid-template-columns:1fr}nav{gap:2px}nav a{font-size:12px;padding:6px 7px}}
+@media print{body{background:#fff}nav{position:static;box-shadow:none;break-inside:avoid}section{box-shadow:none;break-inside:avoid}footer{background:#fff;color:#222;border-top:1px solid #aaa}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <img class="avatar" src="myphoto.jpg" alt="Photograph of Soumyabrata Misra">
+  <h1>Soumyabrata Misra</h1>
+  <p>Online Bachelor of Computer Applications (BCA) Student</p>
+  <p>Marwadi University</p>
+</header>
+
+<nav aria-label="Page sections">
+  <a href="#personal">Personal Details</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="personal">
+    <h2>Personal Details</h2>
+    <div class="grid">
+      <p class="detail"><strong>Name:</strong> Soumyabrata Misra</p>
+      <p class="detail"><strong>Course:</strong> Bachelor of Computer Applications (BCA)</p>
+      <p class="detail"><strong>University:</strong> Marwadi University (Online)</p>
+      <p class="detail"><strong>Location:</strong> Nischintapur, Kulpi, South 24 Parganas, West Bengal</p>
+    </div>
+    <p style="margin-top:14px">I am a computer applications student with an interest in information technology, website design, computer networking and learning new technologies. I enjoy developing my technical knowledge through study and practical work.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ol>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong><br>Marwadi University — Online programme; currently pursuing.</li>
+    </ol>
+    <h3>Professional Training and Certifications</h3>
+    <ul>
+      <li>Certificate Course in Information Technology — Y.C.T.C.</li>
+      <li>ICHNP: A+, N+, MS Office 2010, Installing and Configuring Windows 7, and Laptop Maintenance — IIHT.</li>
+      <li>CCNA (ICND1 and ICND2) — IIHT.</li>
+      <li>Microsoft Certified Professional — Exam 410.</li>
+      <li>Microsoft Windows Server 2016 Training for Beginners — Udemy.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="tags">
+      <span class="tag">HTML5</span><span class="tag">CSS</span>
+      <span class="tag">Computer Networking</span><span class="tag">CCNA Fundamentals</span>
+      <span class="tag">Windows Server</span><span class="tag">MS Office</span>
+      <span class="tag">Computer Hardware</span><span class="tag">Troubleshooting</span>
+      <span class="tag">VS Code</span>
+    </div>
+    <p class="note" style="margin-top:12px">Skills listed reflect areas of training, study and practical interest.</p>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies and Interests</h2>
+    <ul>
+      <li>Learning about new technologies</li>
+      <li>Website designing and development</li>
+      <li>Exploring computer networking</li>
+      <li>Reading technology-related articles</li>
+      <li>Working with computers and troubleshooting</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Achieved Microsoft Certified Professional certification (Exam 410).</li>
+      <li>Completed CCNA (ICND1 and ICND2) training.</li>
+      <li>Completed professional training in IT, hardware and laptop maintenance.</li>
+      <li>Continuing higher education in Computer Applications.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p class="contact-line"><strong>Name:</strong> Soumyabrata Misra</p>
+    <p class="contact-line"><strong>Location:</strong> Kulpi, South 24 Parganas, West Bengal, India</p>
+    <p class="contact-line"><strong>Email:</strong> soumyabrata.misra@gmail.com</p>
+    <p class="contact-line"><strong>Phone:</strong> +91 8116999993</p>
+  </section>
+  <p class="top"><a href="#top">↑ Back to top</a></p>
+</main>
+
+<footer>
+  <p>Student Profile | Soumyabrata Misra</p>
+  <p>Online BCA — Marwadi University</p>
+</footer>
+</body>
+</html>
