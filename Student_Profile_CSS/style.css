@@ -1,0 +1,474 @@
+/* =========================================================
+   STUDENT PROFILE - EXTERNAL CSS
+   ========================================================= */
+
+:root {
+    --primary: #12345a;
+    --secondary: #2878b8;
+    --accent: #18a999;
+    --light: #eef6ff;
+    --background: #f3f7fb;
+    --text: #243447;
+    --muted: #607286;
+    --white: #ffffff;
+    --border: #dce7f0;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102d50 0%, #2878b8 65%, #18a999 100%);
+    color: var(--white);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.avatar-wrap {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+}
+
+.avatar,
+.avatar-fallback {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,.75);
+    box-shadow: 0 8px 25px rgba(0,0,0,.2);
+}
+
+.avatar {
+    object-fit: cover;
+    display: block;
+}
+
+.avatar-fallback {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: var(--primary);
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.welcome {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #dff8ff;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(30px, 5vw, 45px);
+}
+
+.subtitle {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.university {
+    margin: 0;
+    color: #d5efff;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #0b2545;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 13px;
+    border-radius: 20px;
+    transition: .25s;
+}
+
+nav a:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 0 17px;
+}
+
+section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 23px;
+    box-shadow: 0 7px 22px rgba(23,56,88,.08);
+    scroll-margin-top: 82px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(23,56,88,.12);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+.section-title h2 {
+    color: var(--primary);
+    margin: 0;
+    font-size: 23px;
+}
+
+.section-title p {
+    margin: 1px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: var(--light);
+    border-radius: 12px;
+    font-size: 21px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.detail {
+    background: #f7fbff;
+    border: 1px solid #dcebf7;
+    border-left: 4px solid var(--secondary);
+    border-radius: 10px;
+    padding: 13px 15px;
+}
+
+.detail span {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    margin-bottom: 3px;
+}
+
+.detail strong {
+    display: block;
+}
+
+.about-box {
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #eef8ff, #f5fffd);
+}
+
+.about-box h3,
+.subheading {
+    color: #1c5688;
+    margin-top: 0;
+}
+
+.timeline {
+    border-left: 3px solid #cce5f8;
+    margin-left: 10px;
+    padding-left: 23px;
+}
+
+.timeline-item {
+    position: relative;
+    background: #f8fbff;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.dot {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--secondary);
+    left: -31px;
+    top: 21px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #9fd0ef;
+}
+
+.timeline-item h3 {
+    margin: 0 0 5px;
+    color: #1c5688;
+}
+
+.styled-list {
+    padding-left: 24px;
+}
+
+.styled-list li {
+    margin: 8px 0;
+    padding-left: 4px;
+}
+
+.styled-list li::marker {
+    color: var(--secondary);
+}
+
+.subheading {
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: #e8f5ff;
+    color: #164c7a;
+    border: 1px solid #c9e5f8;
+    border-radius: 30px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.tag:hover {
+    background: var(--secondary);
+    color: white;
+    transform: scale(1.04);
+}
+
+.skill {
+    margin-bottom: 17px;
+}
+
+.skill > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill b {
+    color: var(--secondary);
+    font-size: 12px;
+}
+
+.bar {
+    height: 9px;
+    background: #e8eef4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    border-radius: 20px;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.hobby-grid,
+.achievement-grid,
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.hobby {
+    padding: 17px;
+    background: #f8fbff;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.hobby:hover {
+    border-color: #9bc9e8;
+    transform: translateX(3px);
+}
+
+.hobby span {
+    margin-left: 8px;
+}
+
+.achievement {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px;
+    background: linear-gradient(135deg, #f8fbff, #eff9ff);
+    border-radius: 11px;
+    border: 1px solid #d9eaf5;
+}
+
+.achievement > span {
+    min-width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.achievement p {
+    margin: 2px 0;
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #ffffff, #f1f9ff);
+}
+
+.contact-grid > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 13px;
+    border-bottom: 1px solid #e5edf3;
+}
+
+.contact-grid > div span {
+    font-size: 19px;
+}
+
+.top {
+    text-align: center;
+    margin: 5px 0 30px;
+}
+
+.top a {
+    display: inline-block;
+    color: white;
+    background: var(--secondary);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: .2s;
+}
+
+.top a:hover {
+    background: var(--primary);
+}
+
+footer {
+    text-align: center;
+    background: #0b2545;
+    color: #eaf4ff;
+    padding: 24px 12px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+.footer-small {
+    opacity: .7;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 40px 16px;
+    }
+
+    .grid,
+    .hobby-grid,
+    .achievement-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 9px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    nav {
+        position: static;
+        box-shadow: none;
+    }
+
+    section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    footer {
+        background: white;
+        color: #222;
+        border-top: 1px solid #aaa;
+    }
+}

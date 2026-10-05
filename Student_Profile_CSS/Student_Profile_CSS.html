@@ -1,0 +1,168 @@
+<!--Make the student profile webpage created earlier and apply CSS to 
+modify fonts, colors, background, spacing, borders, and text alignment.
+Use external CSS wherever appropriate.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile | Soumyabrata Misra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+    <div class="hero-content">
+        <div class="avatar-wrap">
+            <img class="avatar" src="myphoto.jpg" alt="Photograph of Soumyabrata Misra"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            
+        </div>
+        <div>
+            <p class="welcome">WELCOME TO MY PROFILE</p>
+            <h1>Soumyabrata Misra</h1>
+            <p class="subtitle">Online Bachelor of Computer Applications (BCA) Student</p>
+            <p class="university">Marwadi University</p>
+        </div>
+    </div>
+</header>
+
+<nav aria-label="Page sections">
+    <a href="#personal">Personal</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="personal">
+        <div class="section-title">
+            <span class="icon">👤</span>
+            <div><h2>Personal Details</h2><p>Basic information about me</p></div>
+        </div>
+
+        <div class="grid">
+            <div class="detail"><span>Name</span><strong>Soumyabrata Misra</strong></div>
+            <div class="detail"><span>Course</span><strong>Bachelor of Computer Applications (BCA)</strong></div>
+            <div class="detail"><span>University</span><strong>Marwadi University (Online)</strong></div>
+            <div class="detail"><span>Location</span><strong>Nischintapur, Kulpi, South 24 Parganas, West Bengal</strong></div>
+        </div>
+
+        <div class="about-box">
+            <h3>About Me</h3>
+            <p>I am a computer applications student with an interest in information technology,
+            website design, computer networking and learning new technologies. I enjoy developing
+            my technical knowledge through study and practical work.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-title">
+            <span class="icon">🎓</span>
+            <div><h2>Education</h2><p>Academic journey and training</p></div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p><strong>Marwadi University</strong> — Online programme; currently pursuing.</p>
+            </div>
+        </div>
+
+        <h3 class="subheading">Professional Training & Certifications</h3>
+        <ul class="styled-list">
+            <li>Certificate Course in Information Technology — Y.C.T.C.</li>
+            <li>ICHNP: A+, N+, MS Office 2010, Installing and Configuring Windows 7, and Laptop Maintenance — IIHT.</li>
+            <li>CCNA (ICND1 and ICND2) — IIHT.</li>
+            <li>Microsoft Certified Professional — Exam 410.</li>
+            <li>Microsoft Windows Server 2016 Training for Beginners — Udemy.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <span class="icon">💻</span>
+            <div><h2>Technical Skills</h2><p>Technologies and areas of practical interest</p></div>
+        </div>
+
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Computer Networking</span>
+            <span class="tag">CCNA Fundamentals</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">MS Office</span>
+            <span class="tag">Computer Hardware</span>
+            <span class="tag">Troubleshooting</span>
+            <span class="tag">VS Code</span>
+        </div>
+
+        <h3 class="subheading">Skill Areas</h3>
+        <div class="skill-bars">
+            <div class="skill"><div><span>Web Development</span><b>Learning</b></div><div class="bar"><i style="width:75%"></i></div></div>
+            <div class="skill"><div><span>Computer Networking</span><b>Training</b></div><div class="bar"><i style="width:80%"></i></div></div>
+            <div class="skill"><div><span>Computer Hardware</span><b>Practical Interest</b></div><div class="bar"><i style="width:78%"></i></div></div>
+        </div>
+        <p class="note">The skill areas reflect the training, study and practical interests listed in my profile.</p>
+    </section>
+
+    <section id="hobbies">
+        <div class="section-title">
+            <span class="icon">⭐</span>
+            <div><h2>Hobbies & Interests</h2><p>Things I enjoy learning and exploring</p></div>
+        </div>
+
+        <div class="hobby-grid">
+            <div class="hobby">🚀 <span>Learning about new technologies</span></div>
+            <div class="hobby">🌐 <span>Website designing and development</span></div>
+            <div class="hobby">🔌 <span>Exploring computer networking</span></div>
+            <div class="hobby">📖 <span>Reading technology-related articles</span></div>
+            <div class="hobby">🛠️ <span>Working with computers and troubleshooting</span></div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="section-title">
+            <span class="icon">🏆</span>
+            <div><h2>Achievements</h2><p>Certifications and milestones</p></div>
+        </div>
+
+        <div class="achievement-grid">
+            <div class="achievement"><span>01</span><p>Achieved Microsoft Certified Professional certification (Exam 410).</p></div>
+            <div class="achievement"><span>02</span><p>Completed CCNA (ICND1 and ICND2) training.</p></div>
+            <div class="achievement"><span>03</span><p>Completed professional training in IT, hardware and laptop maintenance.</p></div>
+            <div class="achievement"><span>04</span><p>Continuing higher education in Computer Applications.</p></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-title">
+            <span class="icon">📞</span>
+            <div><h2>Contact Information</h2><p>Get in touch</p></div>
+        </div>
+
+        <div class="contact-grid">
+            <div><span>👤</span><strong>Soumyabrata Misra</strong></div>
+            <div><span>📍</span><strong>Kulpi, South 24 Parganas, West Bengal, India</strong></div>
+            <div><span>✉️</span><strong>soumyabrata.misra@gmail.com</strong></div>
+            <div><span>📱</span><strong>+91 8116999993</strong></div>
+        </div>
+    </section>
+
+    <p class="top"><a href="#top">↑ Back to top</a></p>
+</main>
+
+<footer>
+    <p>Student Profile | Soumyabrata Misra</p>
+    <p>Online BCA — Marwadi University</p>
+    <p class="footer-small">Designed using HTML5 & External CSS</p>
+</footer>
+
+</body>
+</html>
