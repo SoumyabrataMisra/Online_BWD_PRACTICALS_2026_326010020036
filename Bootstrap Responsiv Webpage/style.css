@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #20242a;
+    background: #ffffff;
+}
+
+.navbar {
+    background: rgba(8, 22, 45, 0.96);
+    padding: 14px 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin-left: 14px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background:
+        linear-gradient(90deg, rgba(5,20,45,0.92), rgba(5,20,45,0.55)),
+        url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.hero-section h1 span {
+    color: #ffc107;
+}
+
+.hero-section p {
+    max-width: 680px;
+    line-height: 1.8;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.light-section {
+    background: #f5f8fc;
+}
+
+.section-label {
+    color: #e39b00;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    color: #667085;
+}
+
+.mini-card,
+.program-card,
+.facility-card,
+.contact-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(14, 31, 53, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mini-card:hover,
+.program-card:hover,
+.facility-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(14, 31, 53, 0.15);
+}
+
+.mini-card h4 {
+    color: #0b315f;
+    margin-bottom: 5px;
+}
+
+.mini-card p {
+    margin: 0;
+    color: #667085;
+}
+
+.program-card {
+    height: 100%;
+}
+
+.program-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.program-card h4 {
+    color: #0b315f;
+}
+
+.program-card p,
+.facility-card p {
+    color: #667085;
+    line-height: 1.6;
+}
+
+.feature-box {
+    padding: 18px;
+    background: #f5f8fc;
+    border-left: 4px solid #ffc107;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.facilities-section {
+    background:
+        linear-gradient(rgba(8, 30, 60, 0.94), rgba(8, 30, 60, 0.94)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80")
+        center/cover fixed;
+    color: white;
+}
+
+.facilities-section .facility-card {
+    height: 100%;
+}
+
+.facility-card span {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.facility-card h5 {
+    color: #0b315f;
+    font-weight: 800;
+}
+
+.stats-section {
+    background: #ffc107;
+    padding: 55px 0;
+}
+
+.stats-section h2 {
+    margin-bottom: 5px;
+    color: #071d3a;
+}
+
+.stats-section p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-card {
+    background: #f5f8fc;
+}
+
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-demo div {
+    padding: 18px 8px;
+    text-align: center;
+    background: #0b315f;
+    color: white;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #071d3a;
+    color: white;
+    padding: 45px 0;
+}
+
+.footer h4 {
+    color: #ffc107;
+}
+
+.footer p {
+    color: #d5dce5;
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0 !important;
+    }
+
+    .hero-section {
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .grid-demo {
+        grid-template-columns: 1fr;
+    }
+}
