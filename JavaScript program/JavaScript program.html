@@ -1,0 +1,107 @@
+
+<!--Create a JavaScript program that accepts marks of different subjects,
+calculates total and percentage, and displays the result and grade. Use
+variables, operators, conditional statements, and functions.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University | BCA Result Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo">MU</div>
+            <div>
+                <div class="university">MARWADI UNIVERSITY</div>
+                <div class="department">Department of Bachelor of Computer Applications (BCA)</div>
+            </div>
+        </div>
+        <div class="online">ONLINE BCA PROGRAMME</div>
+    </header>
+
+    <main class="hero">
+        <section class="intro">
+            <p class="eyebrow">ACADEMIC RESULT PORTAL</p>
+            <h1>Student Result Calculator</h1>
+            <p>Enter your subject marks to calculate total marks, percentage and grade.</p>
+        </section>
+
+        <section class="card">
+            <div class="card-heading">
+                <div>
+                    <h2>BCA Semester Result</h2>
+                    <p>Maximum marks: 100 per subject</p>
+                </div>
+                <span class="badge">ONLINE BCA</span>
+            </div>
+
+            <form id="resultForm">
+                <div class="subjects">
+                    <div class="input-group">
+                        <label for="entrepreneurship">Entrepreneurship</label>
+                        <input type="number" id="entrepreneurship" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mathematics">Mathematics</label>
+                        <input type="number" id="mathematics" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+
+                    <div class="input-group full">
+                        <label for="cao">Computer Architecture and Organization</label>
+                        <input type="number" id="cao" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="programming">Programming Practices</label>
+                        <input type="number" id="programming" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="web">Basics of Web Development</label>
+                        <input type="number" id="web" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="environmental">Environmental Science</label>
+                        <input type="number" id="environmental" min="0" max="100" placeholder="Enter marks" required>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">Calculate Result</button>
+                    <button type="button" class="reset" id="resetBtn">Reset</button>
+                </div>
+            </form>
+
+            <div id="result" class="result hidden">
+                <div class="result-title">
+                    <h2>Result Summary</h2>
+                    <span id="statusBadge" class="status">-</span>
+                </div>
+
+                <div class="result-grid">
+                    <div><span>Total Marks</span><strong id="total">0 / 600</strong></div>
+                    <div><span>Percentage</span><strong id="percentage">0%</strong></div>
+                    <div><span>Grade</span><strong id="grade">-</strong></div>
+                </div>
+
+                <p id="message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <strong>MARWADI UNIVERSITY</strong>
+        <span>Department of Bachelor of Computer Applications (BCA) · Online BCA Programme</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
