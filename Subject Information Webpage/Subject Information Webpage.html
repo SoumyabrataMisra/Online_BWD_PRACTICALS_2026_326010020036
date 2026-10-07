@@ -1,0 +1,53 @@
+<!--Create a webpage containing a list of subjects. Use JavaScript arrays
+and functions to display subject information when the user selects a
+subject. Use JavaScript events to make the webpage interactive.-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwadi University - BCA Subjects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <p class="university">MARWADI UNIVERSITY</p>
+      <h1>Bachelor of Computer Applications (BCA)</h1>
+      <p class="subtitle">Subject Information Portal</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Explore Your Subjects</h2>
+      <p>Select a subject from the list below to view its information.</p>
+    </section>
+
+    <section class="subject-panel">
+      <div class="subject-list">
+        <h3>Subjects</h3>
+        <div id="subjectButtons"></div>
+      </div>
+
+      <div class="subject-details" id="subjectDetails">
+        <div class="placeholder">
+          <div class="icon">📚</div>
+          <h2>Select a Subject</h2>
+          <p>Click any subject to display its details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Marwadi University | BCA Online Programme</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
