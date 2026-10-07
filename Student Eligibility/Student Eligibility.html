@@ -1,0 +1,68 @@
+
+<!--Create a webpage that accepts a student's age, attendance
+percentage, and marks. Use JavaScript conditional statements to
+determine whether the student is eligible for an
+examination/admission. Display an appropriate message using a dialog
+box.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University - Student Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">MU</div>
+            <div>
+                <h1>MARWADI UNIVERSITY</h1>
+                <p>Student Eligibility Checker</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="card">
+        <h2>Examination / Admission Eligibility</h2>
+        <p class="intro">Enter the student's details and click the button to check eligibility.</p>
+
+        <form id="eligibilityForm">
+            <label for="age">Student Age</label>
+            <input type="number" id="age" min="1" placeholder="Enter age" required>
+
+            <label for="attendance">Attendance Percentage</label>
+            <input type="number" id="attendance" min="0" max="100" step="0.01"
+                   placeholder="Enter attendance %" required>
+
+            <label for="marks">Marks Percentage</label>
+            <input type="number" id="marks" min="0" max="100" step="0.01"
+                   placeholder="Enter marks %" required>
+
+            <button type="submit">Check Eligibility</button>
+        </form>
+
+        <section class="criteria">
+            <h3>Project Eligibility Criteria</h3>
+            <ul>
+                <li>Age: 18 years or above</li>
+                <li>Attendance: 75% or above</li>
+                <li>Marks: 40% or above</li>
+            </ul>
+        </section>
+
+        <p class="note">
+            Note: These thresholds are used for this JavaScript assignment and are
+            not presented as Marwadi University's official admission rules.
+        </p>
+    </main>
+
+    <footer>
+        <p>MARWADI UNIVERSITY | Student Eligibility Checker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
